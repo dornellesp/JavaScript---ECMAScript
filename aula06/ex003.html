@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programa</title>
+    <style>
+        body {background-color: rgb(184, 144, 221); /*comentario em css*/
+        color: rgb(7, 6, 6);
+    font: normal 16pt Arial}
+    h1 {color: blanchedalmond;}
+
+    </style>
+
+</head>
+<body>
+    <h1>Olá, mundo!</h1>   <!--comentario em html-->
+   <p>Já me livrei da maldição</p> <!--isso aq é html, escritura lá pah-->
+   <script>
+    var n1 = Number(window.prompt ('digite seu numero de celular')) 
+
+
+    //<CONVERSÕES>
+    //parseInt = converte o string para n inteiro. (string = n inteiro)
+     //parseFloat = converte o string para n' real. (string = n real)
+     //Number = converte o string para n' (porém o js pode ficar confuso).
+     //String(n) ou n.toString() = converte n em string. (n = string)
+
+
+    var n2 = Number(window.prompt ('digite seu cpf')) 
+    var s = n1 + n2
+    window.alert (`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    // (+) é concatenação e tbm pra adição
+
+    /*Formatando Strings
+    var s = 'JavaScript'
+    'eu estou aprendendo s' // não faz interpolação
+    'eu estou aprendendo' + s // usa concatenação
+    `eu estou aprendendo ${s}` // usa template string
+    s.length // quantos caracteres a string tem
+    s.toUpperCase() // tudo para 'MAIÚSCULAS'
+    s.toLowerCase() // tudo para 'minúsculas'
+
+    
+   </script>
+</body>
+</html>

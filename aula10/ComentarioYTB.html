@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 11.1 Js - Curso em Vídeo</title>
+</head>
+<body>
+    <h1>AULA 11.1 - JavaScript</h1>
+    <h3>Perguntinhas sobre a Aula 10.</h3>
+    <ol>
+        <li>Consegue citar <strong>três eventos</strong> que pode acontecer com elementos DOM de um site?</li>
+        <li>O que é uma <strong>função</strong>? Como criar funções em JS?</li>
+        <li>Sabe como <strong>pegar os valores</strong> de caixas de texto e fazer cálculos com eles?</li>
+    </ol>    
+    <p>Tem dúvidas ou dificuldade em <strong>qualquer um</strong>  desses assuntos? (s/n) <input type="text" value="" id="txtver"></p>
+    <input type="button" value="verificar" onclick="verify()">
+    <div id="res"></div>
+    <script>
+    
+    function verify(){
+        var txtv = window.document.getElementById('txtver')
+        var res = window.document.getElementById('res')
+        var ver = txtv.value
+        if(ver == 's'){
+            res.innerHTML = `<p>Aparentemente você ainda tem dúvidas sobre o assunto abordado na Aula 10.</p>`
+            res.innerHTML += `<p>Sugiro que você reveja a Aula 10 ou siga a playlist de todo o curso <strong>antes</strong> de prosseguir para Aula 11. Ambas estão logo abaixo. Bons estudos.</p>`
+            res.innerHTML += `<p><iframe width="560" height="315" src="https://www.youtube.com/embed/wWnBB-mZIvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>`
+            res.innerHTML += `<p><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>`
+        } else {
+            res.innerHTML = `<p>Parabéns. Aparentemente você acompanhou e praticou o conteúdo da Aula 10.</p>`
+            res.innerHTML += `<p>Vamos dar continuidade na Aula 11, onde falaremos sobre <strong>Condições</strong>. Bons estudos.</p>`
+            res.innerHTML += `<p><iframe width="560" height="315" src="https://www.youtube.com/embed/cOdG4eACN2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>`
+        }
+    }
+    </script>
+</body>
+
+
+Comentário feito pelo 
+Emanuel Paiva Medeiros.
+Muito brabo!!

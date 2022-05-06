@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6, ex 006</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('qual seu vulgo?')
+        document.write(`Olá <strong>${nome}</strong>! Seu vulgo tem ${nome.length} letras.`)
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}<strong>`)
+            //<strong>=negrito
+
+                
+    /*Formatando Numeros
+> var n1 = 1545.5
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+> n1
+1545.5
+> n1.toFixed(2).replace('.', ',') << // Trocar "." por ","
+'1545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})       << // Localizar a moeda do País. (para mudar basta trocar o 'BRL' por 'USD', 'EUR', etc)
+'R$ 1.545,50' */
+
+
+    </script>
+</body>
+</html>
